@@ -43,12 +43,12 @@ public class CameraController : MonoBehaviour
         //Controls the zoom function of the camera zoom
         if (Input.GetAxis("Mouse ScrollWheel") > 0) //will zoom out 
         {
-            zoomSize -= 1;
+            zoomSize -= 10;
         }
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0) // will zoom in
         {
-            zoomSize += 1;
+            zoomSize += 10;
         }
 
         GetComponent<Camera>().orthographicSize = zoomSize;

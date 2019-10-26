@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    /*// Start is called before the first frame update
+    public GameObject[] objects;
+
+    
+
+
+    
+
+    // Start is called before the first frame update
     void Start()
     {
-        
+        int rand = Random.Range(0, objects.Length);
+        Instantiate(objects[rand], transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -15,7 +23,8 @@ public class GameManager : MonoBehaviour
     {
         
     }
-    const string A_TEAM = "A-Team";
+    
+    /*const string A_TEAM = "A-Team";
     const string B_TEAM = "B-Team";
     const string WIZARDS = "Wizards";
 
