@@ -4,17 +4,29 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-   
+    public GameObject[] objects;
 
 
+   // #region Singleton
+   // public static RedManager instance;
 
+   // private void Awake()
+   // {
+        instance = this;
+   // }
+   // #endregion
+
+
+    //public GameObject redUnit;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //this controls what map spawns out of the prefabs
+        int rand = Random.Range(0, objects.Length);
+        Instantiate(objects[rand], transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame
