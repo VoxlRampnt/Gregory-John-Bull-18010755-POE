@@ -7,17 +7,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] objects;
 
 
-   // #region Singleton
-   // public static RedManager instance;
-
-   // private void Awake()
-   // {
-        instance = this;
-   // }
-   // #endregion
-
-
-    //public GameObject redUnit;
+   
 
 
 
