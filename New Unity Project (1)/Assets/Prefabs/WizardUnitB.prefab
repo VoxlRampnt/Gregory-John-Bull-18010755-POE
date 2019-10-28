@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6109065656912595230}
   - component: {fileID: 3865598504253530149}
   - component: {fileID: 86958749882625583}
-  - component: {fileID: 943559595917847962}
+  - component: {fileID: 8262368184721027779}
+  - component: {fileID: 2032384121365816211}
   m_Layer: 0
   m_Name: WizardUnitB
   m_TagString: Untagged
@@ -103,7 +104,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &943559595917847962
+--- !u!114 &8262368184721027779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8162811357273995691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dacffd6dd6185c94f8bef6acff35d347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  damage: 15
+--- !u!58 &2032384121365816211
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

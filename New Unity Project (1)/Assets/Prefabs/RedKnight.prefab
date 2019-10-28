@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3780017196034821809}
   - component: {fileID: 6914329983452129339}
-  - component: {fileID: 5863398588001018814}
   - component: {fileID: -6419506924169823919}
-  - component: {fileID: -9139425388642544881}
+  - component: {fileID: 4153243390449233310}
+  - component: {fileID: 5521331272238604697}
   m_Layer: 0
   m_Name: RedKnight
-  m_TagString: RedUnit
+  m_TagString: RedMeleeUnit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,18 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5863398588001018814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409995307392669335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ccc32a805c15d4b925df490241dc12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &-6419506924169823919
 Rigidbody2D:
   serializedVersion: 4
@@ -116,7 +104,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &-9139425388642544881
+--- !u!114 &4153243390449233310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409995307392669335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ccc32a805c15d4b925df490241dc12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  takedamage: 5
+--- !u!61 &5521331272238604697
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,4 +143,4 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0.3
+  m_EdgeRadius: 0.001

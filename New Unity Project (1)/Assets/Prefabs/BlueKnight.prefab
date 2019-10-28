@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1132592902912425825}
   - component: {fileID: 2912215454788666715}
-  - component: {fileID: -7049117969132475492}
   - component: {fileID: -3600317417211763160}
-  - component: {fileID: 7085677678867118918}
+  - component: {fileID: 1067082171707709187}
+  - component: {fileID: -6735949740142100065}
   m_Layer: 0
   m_Name: BlueKnight
-  m_TagString: BlueUnit
+  m_TagString: BlueMeleeUnit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,18 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-7049117969132475492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059340504459935326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d6cdf492208004297882fa1860fb9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &-3600317417211763160
 Rigidbody2D:
   serializedVersion: 4
@@ -116,7 +104,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &7085677678867118918
+--- !u!114 &1067082171707709187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059340504459935326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d6cdf492208004297882fa1860fb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  damage: 5
+--- !u!61 &-6735949740142100065
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,4 +143,4 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0.3
+  m_EdgeRadius: 0.001
