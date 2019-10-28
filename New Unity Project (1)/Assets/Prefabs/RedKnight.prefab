@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3780017196034821809}
   - component: {fileID: 6914329983452129339}
+  - component: {fileID: 5863398588001018814}
   m_Layer: 0
   m_Name: RedKnight
   m_TagString: RedUnit
@@ -80,3 +81,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5863398588001018814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409995307392669335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ccc32a805c15d4b925df490241dc12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject[] objects;
 
+    public static GameManager instance;
 
-   
 
 
 
@@ -17,6 +17,13 @@ public class GameManager : MonoBehaviour
         //this controls what map spawns out of the prefabs
         int rand = Random.Range(0, objects.Length);
         Instantiate(objects[rand], transform.position, Quaternion.identity);
+
+        if(instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        instance = this;
     }
 
     // Update is called once per frame
