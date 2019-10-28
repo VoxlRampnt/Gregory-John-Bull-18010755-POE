@@ -30,6 +30,17 @@ public class BlueRangedUnit : MonoBehaviour
             TargetDirection = new Vector2(xDif, yDif);
             transform.Translate(TargetDirection * speed);
         }
+        else if (GameObject.FindGameObjectWithTag("RedUnit") != true)
+        {
+            Target = GameObject.FindGameObjectWithTag("WizardUnit").transform.position;
+
+
+            xDif = Target.x - transform.position.x;
+            yDif = Target.x - transform.position.y;
+
+            TargetDirection = new Vector2(xDif, yDif);
+            transform.Translate(TargetDirection * speed);
+        }
         else
         {
             Target = GameObject.FindGameObjectWithTag("RedBuilding").transform.position;

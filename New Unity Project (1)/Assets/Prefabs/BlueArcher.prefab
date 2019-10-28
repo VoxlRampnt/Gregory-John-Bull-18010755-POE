@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 8985641918464011360}
   - component: {fileID: 3210337523168609923}
   - component: {fileID: 2896557770505390005}
+  - component: {fileID: 2245898894550816268}
+  - component: {fileID: -8046250572725709815}
+  - component: {fileID: 3877292591883581198}
   m_Layer: 0
   m_Name: BlueArcher
   m_TagString: BlueUnit
@@ -93,3 +96,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535290d651d1ebe48bf20cdbbda58083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &2245898894550816268
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360169414780847584}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
+--- !u!50 &-8046250572725709815
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360169414780847584}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &3877292591883581198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360169414780847584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c417616adcd2a248b382496aef3a48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  damage:
+    baseValue: 0
+  colorToTurnTo: {r: 0, g: 0.990566, b: 0.926067, a: 1}
